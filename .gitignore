@@ -1,0 +1,5 @@
+double_kernel/GPIO_IOToggle_TrustZone/STM32CubeIDE/NonSecure/Debug/
+double_kernel/GPIO_IOToggle_TrustZone/STM32CubeIDE/Secure/Debug/
+double_kernel/GPIO_IOToggle_TrustZone/STM32CubeIDE/Secure/.settings/
+double_kernel/GPIO_IOToggle_TrustZone/STM32CubeIDE/NonSecure/.settings/
+double_kernel/GPIO_IOToggle_TrustZone/STM32CubeIDE/Secure/GPIO_IOToggle_TrustZone_Secure Debug.launch
