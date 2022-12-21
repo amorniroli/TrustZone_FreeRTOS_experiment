@@ -24,9 +24,9 @@ main (void)
 }
 
 static void
-nsThread (void* ptrArg)
+nsThread0 (void* ptrArg)
 {
-    (void) ptrArg;
+	(void) ptrArg;
 
     while (1)
     {
@@ -36,16 +36,34 @@ nsThread (void* ptrArg)
     }
 }
 
-void
-vApplicationStackOverflowHook (TaskHandle_t xTask, char * pcTaskName)
+static void
+nsThread1 (void* ptrArg)
 {
-	assert (0);
+	(void) ptrArg;
+
+    while (1)
+    {
+    	vTaskDelay (50);
+
+    	SECURE_ToggleLed3 ();
+    }
 }
 
 void
 vApplicationDaemonTaskStartupHook (void)
 {
-	xTaskCreate ((TaskFunction_t)nsThread, "nonSecureThread", 1024, NULL, 20, NULL);
+	vTaskSuspendAll ();
+
+	xTaskCreate ((TaskFunction_t)nsThread0, "nsThread0", 1024, NULL, 20, NULL);
+	xTaskCreate ((TaskFunction_t)nsThread1, "nsThread1", 1024, NULL, 30, NULL);
+
+	xTaskResumeAll ();
+}
+
+void
+vApplicationStackOverflowHook (TaskHandle_t xTask, char * pcTaskName)
+{
+	assert (0);
 }
 
 void

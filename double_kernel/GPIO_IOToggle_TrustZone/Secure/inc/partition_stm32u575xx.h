@@ -288,7 +288,7 @@
 /*
 // <e>Setup behaviour of Sleep and Exception Handling
 */
-#define SCB_CSR_AIRCR_INIT  0
+#define SCB_CSR_AIRCR_INIT  1
 
 /*
 //   <o> Deep Sleep can be enabled by

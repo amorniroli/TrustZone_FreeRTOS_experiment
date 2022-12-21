@@ -61,6 +61,11 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
+			<name>inc/main.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Secure/inc/main.h</locationURI>
+		</link>
+		<link>
 			<name>inc/partition_stm32u575xx.h</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/Secure/inc/partition_stm32u575xx.h</locationURI>
@@ -74,6 +79,26 @@
 			<name>port/port.c</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/Secure/port/port.c</locationURI>
+		</link>
+		<link>
+			<name>port/portasm.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Secure/port/portasm.c</locationURI>
+		</link>
+		<link>
+			<name>port/portasm.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Secure/port/portasm.h</locationURI>
+		</link>
+		<link>
+			<name>port/portmacro.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Secure/port/portmacro.h</locationURI>
+		</link>
+		<link>
+			<name>port/portmacrocommon.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Secure/port/portmacrocommon.h</locationURI>
 		</link>
 		<link>
 			<name>port/stm32u5xx_hal_conf.h</name>
@@ -311,11 +336,6 @@
 			<locationURI>PARENT-4-PROJECT_LOC/dependencies/FreeRTOS-Kernel/include/timers.h</locationURI>
 		</link>
 		<link>
-			<name>depedencies/FreeRTOS-Kernel/portable/GCC</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
 			<name>depedencies/FreeRTOS-Kernel/portable/MemMang</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
@@ -401,11 +421,6 @@
 			<locationURI>PARENT-4-PROJECT_LOC/dependencies/FreeRTOS-Kernel/.github/workflows/unit-tests.yml</locationURI>
 		</link>
 		<link>
-			<name>depedencies/FreeRTOS-Kernel/portable/GCC/ARM_CM33_NTZ</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
 			<name>depedencies/FreeRTOS-Kernel/portable/MemMang/heap_4.c</name>
 			<type>1</type>
 			<locationURI>PARENT-4-PROJECT_LOC/dependencies/FreeRTOS-Kernel/portable/MemMang/heap_4.c</locationURI>
@@ -427,11 +442,6 @@
 		</link>
 		<link>
 			<name>depedencies/STM32CubeU5/Drivers/STM32U5xx_HAL_Driver/Src</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>depedencies/FreeRTOS-Kernel/portable/GCC/ARM_CM33_NTZ/non_secure</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
@@ -524,26 +534,6 @@
 			<name>depedencies/STM32CubeU5/Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_rcc.c</name>
 			<type>1</type>
 			<locationURI>PARENT-4-PROJECT_LOC/dependencies/STM32CubeU5/Drivers/STM32U5xx_HAL_Driver/Src/stm32u5xx_hal_rcc.c</locationURI>
-		</link>
-		<link>
-			<name>depedencies/FreeRTOS-Kernel/portable/GCC/ARM_CM33_NTZ/non_secure/portasm.c</name>
-			<type>1</type>
-			<locationURI>PARENT-4-PROJECT_LOC/dependencies/FreeRTOS-Kernel/portable/GCC/ARM_CM33_NTZ/non_secure/portasm.c</locationURI>
-		</link>
-		<link>
-			<name>depedencies/FreeRTOS-Kernel/portable/GCC/ARM_CM33_NTZ/non_secure/portasm.h</name>
-			<type>1</type>
-			<locationURI>PARENT-4-PROJECT_LOC/dependencies/FreeRTOS-Kernel/portable/GCC/ARM_CM33_NTZ/non_secure/portasm.h</locationURI>
-		</link>
-		<link>
-			<name>depedencies/FreeRTOS-Kernel/portable/GCC/ARM_CM33_NTZ/non_secure/portmacro.h</name>
-			<type>1</type>
-			<locationURI>PARENT-4-PROJECT_LOC/dependencies/FreeRTOS-Kernel/portable/GCC/ARM_CM33_NTZ/non_secure/portmacro.h</locationURI>
-		</link>
-		<link>
-			<name>depedencies/FreeRTOS-Kernel/portable/GCC/ARM_CM33_NTZ/non_secure/portmacrocommon.h</name>
-			<type>1</type>
-			<locationURI>PARENT-4-PROJECT_LOC/dependencies/FreeRTOS-Kernel/portable/GCC/ARM_CM33_NTZ/non_secure/portmacrocommon.h</locationURI>
 		</link>
 		<link>
 			<name>depedencies/STM32CubeU5/Drivers/CMSIS/Core/Include/cmsis_armcc.h</name>

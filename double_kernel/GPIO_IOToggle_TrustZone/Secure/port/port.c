@@ -784,10 +784,18 @@ void vPortYield( void ) /* PRIVILEGED_FUNCTION */
 }
 /*-----------------------------------------------------------*/
 
+static uint32_t last;
+
 void vPortEnterCritical( void ) /* PRIVILEGED_FUNCTION */
 {
-    portDISABLE_INTERRUPTS();
-    ulCriticalNesting++;
+	uint32_t temp;
+
+	temp = ulSetInterruptMask();
+
+    if (ulCriticalNesting++ == 0)
+    {
+    	last = temp;
+    }
 
     /* Barriers are normally not required but do ensure the code is
      * completely within the specified behaviour for the architecture. */
@@ -799,11 +807,10 @@ void vPortEnterCritical( void ) /* PRIVILEGED_FUNCTION */
 void vPortExitCritical( void ) /* PRIVILEGED_FUNCTION */
 {
     configASSERT( ulCriticalNesting );
-    ulCriticalNesting--;
 
-    if( ulCriticalNesting == 0 )
+    if( --ulCriticalNesting == 0 )
     {
-        portENABLE_INTERRUPTS();
+    	vClearInterruptMask (last);
     }
 }
 /*-----------------------------------------------------------*/

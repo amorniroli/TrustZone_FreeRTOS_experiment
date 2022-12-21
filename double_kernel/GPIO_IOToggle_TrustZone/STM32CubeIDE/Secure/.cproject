@@ -47,7 +47,6 @@
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../Secure/port&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../Secure_nsclib&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../dependencies/FreeRTOS-Kernel/include&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../dependencies/FreeRTOS-Kernel/portable/GCC/ARM_CM33_NTZ/non_secure&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../dependencies/STM32CubeU5/Drivers/CMSIS/Core/Include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../dependencies/STM32CubeU5/Drivers/CMSIS/Device/ST/STM32U5xx/Include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../../../dependencies/STM32CubeU5/Drivers/STM32U5xx_HAL_Driver/Inc&quot;"/>
@@ -172,4 +171,5 @@
 		</scannerConfigBuildInfo>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="refreshScope"/>
 </cproject>
